@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Responsive Calculator</title>
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<div class="calculator" role="application" aria-label="Calculator">
+<div id="display" class="display" aria-live="polite" aria-atomic="true">0</div>
+<div class="buttons">
+<button class="control" data-action="clear" aria-label="Clear">C</button>
+<button class="control" data-action="backspace" aria-label="Backspace">⌫</button>
+<button class="operator" data-action="divide" aria-label="Divide">÷</button>
+<button class="operator" data-action="multiply" aria-label="Multiply">×</button>
+
+<button data-action="7">7</button>
+<button data-action="8">8</button>
+<button data-action="9">9</button>
+<button class="operator" data-action="subtract" aria-label="Subtract">−</button>
+
+<button data-action="4">4</button>
+<button data-action="5">5</button>
+<button data-action="6">6</button>
+<button class="operator" data-action="add" aria-label="Add">+</button>
+
+<button data-action="1">1</button>
+<button data-action="2">2</button>
+<button data-action="3">3</button>
+<button class="control" data-action="equals" aria-label="Equals" style="grid-row: span 2; background: #00adb5;">=</button>
+
+<button data-action="0" style="grid-column: span 2;">0</button>
+<button data-action="decimal">.</button>
+</div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
